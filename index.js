@@ -25,7 +25,14 @@ try {
 app.post('/ask', async (req, res) => {
   const userMessage = req.body.message;
 
-  const prompt = `${schoolInfo}\n\nUser: ${userMessage}\nAI:`;
+  const prompt = `You are a helpful school assistant. Use the following reference data to answer user questions. 
+If you don’t know the answer from the data, just say "I'm not sure."
+
+REFERENCE DATA:
+${schoolInfo}
+
+USER QUESTION: ${userMessage}
+ANSWER:`;
 
   try {
     const completion = await openai.chat.completions.create({
