@@ -24,6 +24,7 @@ try {
 
 app.post('/ask', async (req, res) => {
   const userMessage = req.body.message;
+
   const prompt = `${schoolInfo}\n\nUser: ${userMessage}\nAI:`;
 
   try {
