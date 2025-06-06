@@ -25,10 +25,11 @@ try {
 app.post('/ask', async (req, res) => {
   const userMessage = req.body.message;
 
-  const prompt = `You are a helpful school assistant. Use the following reference data to answer user questions. 
-If you don’t know the answer from the data, just say "I'm not sure."
+const prompt = `You are a helpful school assistant. Below is a list of questions and answers from a file.
 
-REFERENCE DATA:
+Do your best to find the most relevant answer to the user's question by scanning the list. If no relevant answer exists, say "I'm not sure."
+
+QUESTION AND ANSWER LIST:
 ${schoolInfo}
 
 USER QUESTION: ${userMessage}
