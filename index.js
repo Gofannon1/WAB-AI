@@ -12,8 +12,15 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-// Load your school info from file
-const schoolInfo = fs.readFileSync('school_info.txt', 'utf-8');
+let schoolInfo = "";
+try {
+  schoolInfo = fs.readFileSync('school_info.txt', 'utf-8');
+  if (schoolInfo.length > 5000) {
+    schoolInfo = schoolInfo.slice(-5000); // trim to last 5000 characters
+  }
+} catch (e) {
+  console.error("Failed to load school info:", e);
+}
 
 app.post('/ask', async (req, res) => {
   const userMessage = req.body.message;
