@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>WAB AI</title>
-    <style>
-      body { font-family: sans-serif; max-width: 600px; margin: auto; }
-      #chat { border: 1px solid #ccc; padding: 10px; height: 400px; overflow-y: scroll; }
-      input { width: 80%; }
-      button { width: 18%; }
-    </style>
-  </head>
-  <body>
-    <h2>WAB AI</h2>
-    <div id="chat"></div>
-    <input type="text" id="userInput" placeholder="Ask a question..." />
-    <button onclick="sendMessage()">Send</button>
-
-    <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAB AI Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header>WAB AI Assistant</header>
+    <div id="chat" class="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Ask me anything about WAB..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
