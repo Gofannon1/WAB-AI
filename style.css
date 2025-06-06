@@ -83,3 +83,21 @@ header {
 .input-area button:hover {
   background-color: #0369a1;
 }
+
+header {
+  background-color: #01487e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header img.logo {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+}
