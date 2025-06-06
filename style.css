@@ -21,12 +21,32 @@ body {
   height: 90vh;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
 header {
-  background-color: #01487e;
-  color: white;
+  background-color: white; /* Match logo background */
+  color: #222;
   text-align: center;
   padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-bottom: 2px solid #f1f1f1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header img.logo {
+  height: 48px;
+  width: auto;
+}
+
+header .title {
+  font-family: 'Rubik Mono One', sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .chat-box {
