@@ -2,8 +2,8 @@
 
 Q: What is the Early Childhood Center (ECC) at WAB?
 A: WAB's ECC is a joyful and nurturing learning environment for children aged 3 to 4.
-Alt: Can you rephrase that?
-Alt: What else should I know?
+Alt: What age are students in ECC?
+Alt: What is ECC?
 
 Q: What support services are available in the ECC?
 A: The ECC includes integrated support services such as EAL, Learning Support, and Social Emotional Counselling.
